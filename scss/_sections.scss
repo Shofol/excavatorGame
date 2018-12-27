@@ -1,0 +1,50 @@
+@import './colors';
+//HEADER//
+
+header {
+    position: relative;
+
+    form {
+        a {
+            margin: 0 .5rem !important;
+        }
+    }
+}
+
+section {
+    position: relative;
+    // height: 100vh;
+    overflow: hidden;
+    margin: 1rem 0rem;
+}
+
+.howToUse {
+    margin: 10rem 4rem 9rem 7rem !important;
+}
+
+.userDetail {
+    background: rgba(255, 227, 188, .8);
+    padding: 1.5rem;
+    margin: 2rem 0rem;
+
+    th {
+        font-weight: 600;
+    }
+
+    td {
+        padding-left: 1rem;
+    }
+}
+
+
+//Media Queries//
+@media only screen and (max-width: 600px) {
+    .howToUse {
+        margin: 1.4rem !important;
+    }
+
+    iframe {
+        width: 300px;
+        height: 400px;
+    }
+}

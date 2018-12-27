@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to right, #e6b980 0%, #eacda3 100%);
+  font-family: 'Titillium Web', sans-serif; }
+  body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/truckTrack.png") no-repeat; }
+
+ul {
+  list-style-type: none; }
+
+h2 {
+  font-family: 'Bungee Shade', cursive; }
+
+iframe {
+  margin: .2rem 0rem !important;
+  border: 7px solid #ffe3bc;
+  box-shadow: 5px 5px 10px -6px; }
+
+.primary-button {
+  text-decoration: none !important;
+  background-color: #FF0000;
+  color: #f4f4f4 !important;
+  padding: .5rem 1.2rem;
+  border-radius: 5px;
+  border-bottom: 4px solid #A70000;
+  transition: all .25s; }
+  .primary-button:hover {
+    cursor: pointer;
+    margin-top: 1px;
+    border-bottom: 3px solid #A70000;
+    transition: all .25s; }
+
+.info-button {
+  text-decoration: none !important;
+  background-color: #007BFF;
+  color: #f4f4f4 !important;
+  padding: .5rem 1.2rem;
+  border-radius: 5px;
+  border-bottom: 4px solid #0463c9;
+  transition: all .25s; }
+  .info-button:hover {
+    cursor: pointer;
+    margin-top: 1px;
+    border-bottom: 3px solid #0463c9;
+    transition: all .25s; }
+
+header {
+  position: relative; }
+  header form a {
+    margin: 0 .5rem !important; }
+
+section {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0rem; }
+
+.howToUse {
+  margin: 10rem 4rem 9rem 7rem !important; }
+
+.userDetail {
+  background: rgba(255, 227, 188, 0.8);
+  padding: 1.5rem;
+  margin: 2rem 0rem; }
+  .userDetail th {
+    font-weight: 600; }
+  .userDetail td {
+    padding-left: 1rem; }
+
+@media only screen and (max-width: 600px) {
+  .howToUse {
+    margin: 1.4rem !important; }
+  iframe {
+    width: 300px;
+    height: 400px; } }

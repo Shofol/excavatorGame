@@ -1,0 +1,86 @@
+@import '_colors.scss';
+
+a {
+    text-decoration: none;
+}
+
+body {
+    // background: #FDC830;
+    /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #F37335, #FDC830);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #D1913C;
+    /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to left, #FFD194, #D1913C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to left, #FFD194, #D1913C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    // background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    // background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    background-image: linear-gradient(to right, #e6b980 0%, #eacda3 100%);
+    font-family: 'Titillium Web', sans-serif;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/truckTrack.png') no-repeat;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {}
+
+h2 {
+    font-family: 'Bungee Shade', cursive;
+}
+
+h3 {}
+
+h4 {}
+
+iframe {
+    margin: .2rem 0rem !important;
+    border: 7px solid $border-color;
+    box-shadow: 5px 5px 10px -6px;
+}
+
+// /buttons
+@mixin button($primary-button-color, $secondary-button-color) {
+    text-decoration: none !important;
+    background-color: $primary-button-color;
+    color: $foreground-color !important;
+    padding: .5rem 1.2rem;
+    // margin: 0 .5rem;
+    border-radius: 5px;
+    border-bottom: 4px solid$secondary-button-color;
+    transition: all .25s;
+
+    &:hover {
+        @include button-hover($secondary-button-color);
+    }
+}
+
+@mixin button-hover($color) {
+    cursor: pointer;
+    margin-top: 1px;
+    border-bottom: 3px solid $color;
+    transition: all .25s;
+}
+
+.primary-button {
+    @include button($secondary-color, $accent-color);
+}
+
+.info-button {
+    @include button($info-color, $info-accent-color);
+}
