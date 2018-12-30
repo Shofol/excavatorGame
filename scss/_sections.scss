@@ -36,6 +36,20 @@ section {
     }
 }
 
+.userControl {
+    margin: 1.3rem 0 0rem 2rem;
+}
+
+iframe {
+    min-height: 20rem !important;
+    max-height: 29rem !important;
+}
+
+.userDetailMobileLive {
+    display: none !important;
+}
+
+
 
 //Media Queries//
 @media only screen and (max-width: 600px) {
@@ -43,13 +57,18 @@ section {
         margin: 1.4rem !important;
     }
 
-    iframe {
-        width: 300px;
-        height: 400px;
+    .userControl {
+        margin-top: 2rem;
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .userDetailLive {
+        display: none !important;
     }
 
-    .userControl {
-        margin-top: 1rem;
-        margin-left: 0 !important;
+    .userDetailMobileLive {
+        display: block !important;
     }
 }

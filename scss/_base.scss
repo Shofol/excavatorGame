@@ -62,18 +62,19 @@ iframe {
     padding: .5rem 1.2rem;
     // margin: 0 .5rem;
     border-radius: 5px;
-    border-bottom: 4px solid$secondary-button-color;
+    border-bottom: 4px solid $secondary-button-color;
     transition: all .25s;
 
     &:hover {
-        @include button-hover($secondary-button-color);
+        @include button-hover($primary-button-color, $secondary-button-color);
     }
 }
 
-@mixin button-hover($color) {
+@mixin button-hover($background-color, $border-color) {
     cursor: pointer;
     margin-top: 1px;
-    border-bottom: 3px solid $color;
+    background-color: $background-color !important;
+    border-bottom: 3px solid $border-color;
     transition: all .25s;
 }
 
@@ -83,4 +84,8 @@ iframe {
 
 .info-button {
     @include button($info-color, $info-accent-color);
+}
+
+.not-active {
+    background-color: #dc1212 !important;
 }

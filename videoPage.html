@@ -25,7 +25,7 @@
       </button>
       <div class=" ml-auto" id="navbarOptions" class="navbarOptions">
         <form class="form-inline">
-          <a class="primary-button">Log Out</a>
+          <a href="./index.html" class="primary-button">Log Out</a>
           <!-- data-toggle="modal" data-target="#registrationModal" data-whatever="Sign Up" -->
         </form>
       </div>
@@ -45,18 +45,7 @@
               aria-controls="pills-profile" aria-selected="false">Room View</a>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="userDetail d-flex">
+        <div class="userDetail userDetailMobileLive d-flex">
           <div>
             <h2 class="text-align-center">User Detail</h2>
             <table>
@@ -75,28 +64,62 @@
             </table>
           </div>
         </div>
-        <div class="userDetail" id="session">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5XHockMCEjI"></iframe>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SDozeZFKD2Y"></iframe>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="userDetail userDetailLive d-flex">
+          <div>
+            <h2 class="text-align-center">User Detail</h2>
+            <table>
+              <tr>
+                <th><strong>User Name</strong></th>
+                <td>Nasir</td>
+              </tr>
+              <tr>
+                <th><strong>User Email</strong></th>
+                <td>nasir@gmail.com</td>
+              </tr>
+              <tr>
+                <th><strong>Balance</strong></th>
+                <td>45USD</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="userDetail">
           <div class="d-flex flex-column">
-            <div class="d-flex">
-              <a href="" class="primary-button"><img width="50px" src="./images/leftForward-01.svg" alt=""></a>
-              <a href="" class="primary-button"><img width="50px" src="./images/Forward-01.svg" alt=""></a>
-              <a href="" class="primary-button"><img width="50px" src="./images/rightForward-01.svg" alt=""></a>
+            <div class="d-flex justify-content-center">
+              <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/leftForward-01.svg" alt=""></a>
+              <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/Forward-01.svg" alt=""></a>
+              <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/rightForward-01.svg" alt=""></a>
             </div>
             <div>
               <div>
-                <div class="d-flex">
-                  <a href="" class="primary-button"><img width="50px" src="./images/leftRotate-01.svg" alt=""></a>
-                  <a href="" class="primary-button"><img width="50px" src="./images/joystick.svg" alt=""></a>
-                  <a href="" class="primary-button"><img width="50px" src="./images/rightRotate-01.svg" alt=""></a>
+                <div class="d-flex justify-content-center">
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/leftRotate-01.svg"
+                      alt=""></a>
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/joystick.svg" alt=""></a>
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/rightRotate-01.svg"
+                      alt=""></a>
                 </div>
               </div>
             </div>
             <div>
               <div>
-                <div class="d-flex">
-                  <a href="" class="primary-button"><img width="50px" src="./images/leftBackword-01.svg" alt=""></a>
-                  <a href="" class="primary-button"><img width="50px" src="./images/Backword-01.svg" alt=""></a>
-                  <a href="" class="primary-button"><img width="50px" src="./images/rightBackward-01.svg" alt=""></a>
+                <div class="d-flex justify-content-center">
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/leftBackword-01.svg"
+                      alt=""></a>
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/Backword-01.svg" alt=""></a>
+                  <a href="" class="primary-button not-active m-1"><img width="50px" src="./images/rightBackward-01.svg"
+                      alt=""></a>
                 </div>
               </div>
             </div>

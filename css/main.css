@@ -46,6 +46,7 @@ iframe {
   .primary-button:hover {
     cursor: pointer;
     margin-top: 1px;
+    background-color: #FF0000 !important;
     border-bottom: 3px solid #A70000;
     transition: all .25s; }
 
@@ -60,8 +61,12 @@ iframe {
   .info-button:hover {
     cursor: pointer;
     margin-top: 1px;
+    background-color: #007BFF !important;
     border-bottom: 3px solid #0463c9;
     transition: all .25s; }
+
+.not-active {
+  background-color: #dc1212 !important; }
 
 header {
   position: relative; }
@@ -85,12 +90,25 @@ section {
   .userDetail td {
     padding-left: 1rem; }
 
+.userControl {
+  margin: 1.3rem 0 0rem 2rem; }
+
+iframe {
+  min-height: 20rem !important;
+  max-height: 29rem !important; }
+
+.userDetailMobileLive {
+  display: none !important; }
+
 @media only screen and (max-width: 600px) {
   .howToUse {
     margin: 1.4rem !important; }
-  iframe {
-    width: 300px;
-    height: 400px; }
   .userControl {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 0 !important; } }
+
+@media only screen and (max-width: 765px) {
+  .userDetailLive {
+    display: none !important; }
+  .userDetailMobileLive {
+    display: block !important; } }
